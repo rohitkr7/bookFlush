@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="jumbotron text-center" style="margin:30px">
+        <h1>Welcome To BookFlush</h1>
+        <p class="lead">This application is built on python flask framework and the focus it to learn python flask framework!</p>
+        {% if session.logged_in == NULL %}
+            <a href="/register" class="btn btn-primary btn-lg">Register</a>
+            <a href="/login" class="btn btn-success btn-lg">Login</a>
+        {% endif %}
+    </div>
+{% endblock %}
